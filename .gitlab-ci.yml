@@ -4,8 +4,9 @@ image: docker:latest
 
 services:
   - docker:dind
-  
+
 variables:
+  DOCKER_DRIVER: overlay
   IMAGE_NAME: parkourben99/android-build-environment
 
 latest:
