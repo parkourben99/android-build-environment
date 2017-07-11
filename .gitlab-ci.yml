@@ -2,6 +2,9 @@
 # Official docker image.
 image: docker:latest
 
+services:
+  - docker:dind
+  
 variables:
   IMAGE_NAME: parkourben99/android-build-environment
 
