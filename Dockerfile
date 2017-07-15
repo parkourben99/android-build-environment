@@ -4,7 +4,7 @@ FROM uber/android-build-environment:latest
 
 MAINTAINER "ben@aylessoftware.com"
 
-ENV ANDROID_COMPONENTS android-25,build-tools-25.0.2,gradle-3.3-all
+ENV ANDROID_COMPONENTS android-25,build-tools-25.0.2,gradle-3.3-all,extra-android-m2repository
 
 # Install Android Build tools
 RUN echo y | /usr/local/android-sdk/tools/android update sdk --filter "${ANDROID_COMPONENTS}" --no-ui -a
