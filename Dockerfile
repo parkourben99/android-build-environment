@@ -6,9 +6,6 @@ MAINTAINER "ben@aylessoftware.com"
 
 ENV ANDROID_COMPONENTS android-25,build-tools-25.0.0,extra-android-m2repository
 
-# Update gradle
-RUN sdk install gradle 3.3-all
-
 # Install Android Build tools
 RUN echo y | /usr/local/android-sdk/tools/android update sdk --filter "${ANDROID_COMPONENTS}" --no-ui -a
 
